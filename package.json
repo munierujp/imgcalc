@@ -7,7 +7,7 @@
   "scripts": {
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:css": "stylelint '**/*.{css,scss,vue}'",
-    "fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "precommit": "npm run lint:js",
     "dev": "nuxt",
     "build": "nuxt build",
