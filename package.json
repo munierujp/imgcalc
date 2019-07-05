@@ -8,6 +8,7 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:css": "stylelint '**/*.{css,scss,vue}'",
     "fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "fix:css": "stylelint '**/*.{css,scss,vue}' --fix",
     "precommit": "npm run lint:js",
     "dev": "nuxt",
     "build": "nuxt build",
