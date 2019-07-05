@@ -8,6 +8,7 @@
     "lint": "npm-run-all -p lint:*",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:css": "stylelint '**/*.{css,scss,vue}'",
+    "fix": "npm-run-all -p fix:*",
     "fix:js": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "fix:css": "stylelint '**/*.{css,scss,vue}' --fix",
     "precommit": "npm run lint",
