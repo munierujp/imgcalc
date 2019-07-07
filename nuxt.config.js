@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+import i18n from './nuxt-i18n.config'
+import lang from './lang/ja'
 
 export default {
   mode: 'spa',
@@ -6,12 +8,12 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: `%s - ${lang.APP_NAME}`,
+    title: lang.APP_NAME,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: lang.APP_DESCRIPTION }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -42,7 +44,8 @@ export default {
   modules: [
     '@nuxtjs/vuetify',
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    ['nuxt-i18n', i18n]
   ],
   /*
   ** vuetify module configuration
