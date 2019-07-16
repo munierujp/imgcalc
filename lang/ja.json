@@ -1,6 +1,12 @@
 {
   "APP_NAME": "imgcalc",
   "APP_DESCRIPTION": "アスペクト比から画像サイズを計算するツール",
+  "FOOTER_CREATOR": "Created by {creator}",
+  "FOOTER_CREATOR_URL": "https://twitter.com/munieru_jp",
+  "FOOTER_CREATOR_LABEL": "@munieru_jp",
+  "FOOTER_HOSTING_SITE": "Hosted on {site}",
+  "FOOTER_HOSTING_SITE_URL": "https://github.com/munierujp/imgcalc",
+  "FOOTER_HOSTING_SITE_LABEL": "GitHub",
   "HEIGHT": "縦幅",
   "HEIGHT_RATIO": "縦比",
   "PRESET": "プリセット",
