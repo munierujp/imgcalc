@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73ae2996-3e5c-4717-8c92-5db9d6e15550/deploy-status)](https://app.netlify.com/sites/imgcalc/deploys)
+
 # imgcalc
 アスペクト比から画像サイズを計算するツール
 
