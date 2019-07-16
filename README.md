@@ -1,22 +1,31 @@
 # imgcalc
+アスペクト比から画像サイズを計算するツール
 
-> Tool for calculating image size from aspect ratio
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm run install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+## 開発
+### 初期設定
+#### パッケージをインストール
+```sh
+$ npm i
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+または
+
+```sh
+$ yarn install
+```
+
+#### 設定ファイルを作成
+`config.sample.json`ファイルをコピーして`config.json`ファイルを作成します。
+
+```sh
+$ cp config.sample.json config.json
+```
+
+作成した`config.json`ファイルに以下の内容を入力してください。
+
+|キー|説明|例|
+|---|---|---|
+|`BASE_DIR`|デプロイ先のベースディレクトリ|`/`|
+|`TWITTER_ID`|TwitterのID|`munieru_jp`|
+|`OG_IMAGE_PATH`|OGP画像のパス|`favicon-256x256.png`|
+|`ORIGIN`|デプロイ先のオリジン|`http://localhost:3000/`|
