@@ -1,9 +1,6 @@
 <template>
   <v-layout column>
     <v-flex>
-      <app-title />
-    </v-flex>
-    <v-flex>
       <v-layout row justify-center>
         <v-flex xs12 sm6 md4>
           <v-select
@@ -60,12 +57,10 @@
 <script>
 import presets from '~/modules/presets'
 import AppInput from '~/components/AppInput'
-import AppTitle from '~/components/AppTitle'
 
 export default {
   components: {
-    AppInput,
-    AppTitle
+    AppInput
   },
   data: () => {
     const preset = presets[0]
