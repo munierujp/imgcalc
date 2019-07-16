@@ -1,11 +1,8 @@
 <template>
   <v-layout column>
     <v-flex>
-      <app-title />
-    </v-flex>
-    <v-flex>
       <v-layout row justify-center>
-        <v-flex xs12 sm6 md4>
+        <v-flex xs8 sm4 md4 lg2 xl2>
           <v-select
             v-model="preset"
             :items="presets"
@@ -20,14 +17,14 @@
     </v-flex>
     <v-flex>
       <v-layout row justify-center>
-        <v-flex xs6 sm3 md2>
+        <v-flex xs4 sm2 md2 lg1 xl1>
           <app-input
             v-model="widthRatio"
             :label="$t('WIDTH_RATIO')"
             @input="widthRatioHasChanged"
           />
         </v-flex>
-        <v-flex xs6 sm3 md2>
+        <v-flex xs4 sm2 md2 lg1 xl1>
           <app-input
             v-model="heightRatio"
             :label="$t('HEIGHT_RATIO')"
@@ -38,14 +35,14 @@
     </v-flex>
     <v-flex>
       <v-layout row justify-center>
-        <v-flex xs6 sm3 md2>
+        <v-flex xs4 sm2 md2 lg1 xl1>
           <app-input
             v-model="width"
             :label="$t('WIDTH')"
             @input="widthHasChanged"
           />
         </v-flex>
-        <v-flex xs6 sm3 md2>
+        <v-flex xs4 sm2 md2 lg1 xl1>
           <app-input
             v-model="height"
             :label="$t('HEIGHT')"
@@ -60,12 +57,10 @@
 <script>
 import presets from '~/modules/presets'
 import AppInput from '~/components/AppInput'
-import AppTitle from '~/components/AppTitle'
 
 export default {
   components: {
-    AppInput,
-    AppTitle
+    AppInput
   },
   data: () => {
     const preset = presets[0]

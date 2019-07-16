@@ -1,5 +1,6 @@
 <template>
   <v-app id="app">
+    <app-header />
     <v-content>
       <v-container
         grid-list-xl
@@ -13,10 +14,26 @@
 </template>
 
 <script>
+import AppHeader from '~/components/AppHeader'
 import AppFooter from '~/components/AppFooter'
 
 export default {
+  head() {
+    const APP_NAME = this.$t('APP_NAME')
+    const APP_DESCRIPTION = this.$t('APP_DESCRIPTION')
+    const { meta } = this.$nuxtI18nSeo()
+    return {
+      title: `${APP_NAME}: ${APP_DESCRIPTION}`,
+      meta: [
+        { hid: 'description', name: 'description', content: APP_DESCRIPTION },
+        { hid: 'og:title', property: 'og:title', content: APP_NAME },
+        { hid: 'og:description', property: 'og:description', content: APP_DESCRIPTION },
+        ...meta
+      ]
+    }
+  },
   components: {
+    AppHeader,
     AppFooter
   }
 }
