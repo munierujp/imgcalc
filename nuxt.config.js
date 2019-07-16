@@ -4,6 +4,7 @@ import colors from 'vuetify/es5/util/colors'
 import i18n from './nuxt-i18n.config'
 import lang from './lang/ja'
 
+const DEFAULT_LOCALE = i18n.defaultLocale
 const APP_NAME = lang.APP_NAME
 const APP_DESCRIPTION = lang.APP_DESCRIPTION
 
@@ -99,6 +100,18 @@ export default {
   */
   router: {
     base: BASE_DIR
+  },
+  /*
+  ** PWA config
+  */
+  manifest: {
+    name: APP_NAME,
+    short_name: APP_NAME,
+    description: APP_DESCRIPTION,
+    lang: DEFAULT_LOCALE
+  },
+  meta: {
+    author: TWITTER_ID
   }
 }
 
