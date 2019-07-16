@@ -1,5 +1,6 @@
 <template>
   <v-app id="app">
+    <app-header />
     <v-content>
       <v-container
         grid-list-xl
@@ -13,6 +14,7 @@
 </template>
 
 <script>
+import AppHeader from '~/components/AppHeader'
 import AppFooter from '~/components/AppFooter'
 
 export default {
@@ -31,6 +33,7 @@ export default {
     }
   },
   components: {
+    AppHeader,
     AppFooter
   }
 }
