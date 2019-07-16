@@ -1,10 +1,16 @@
 import fs from 'fs'
+import { URL } from 'url'
 import colors from 'vuetify/es5/util/colors'
 import i18n from './nuxt-i18n.config'
 import lang from './lang/ja'
 
+const APP_NAME = lang.APP_NAME
+const APP_DESCRIPTION = lang.APP_DESCRIPTION
+
 const config = loadConfig('./config.json')
-const { BASE_DIR } = config
+const { BASE_DIR, OG_IMAGE_PATH, ORIGIN } = config
+const BASE_URL = new URL(BASE_DIR, ORIGIN).toString()
+const OG_IMAGE_URL = new URL(OG_IMAGE_PATH, BASE_URL).toString()
 
 export default {
   mode: 'spa',
@@ -12,11 +18,18 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: lang.APP_NAME,
+    title: APP_NAME,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: lang.APP_DESCRIPTION }
+      { hid: 'description', name: 'description', content: APP_DESCRIPTION },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: APP_NAME },
+      { hid: 'og:description', property: 'og:description', content: APP_DESCRIPTION },
+      { hid: 'og:url', property: 'og:url', content: BASE_URL },
+      { hid: 'og:image', property: 'og:image', content: OG_IMAGE_URL },
+      { hid: 'og:image:width', property: 'og:image:width', content: '256' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '256' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -92,10 +105,14 @@ function loadConfig(filepath) {
     return JSON.parse(data)
   } catch (ignored) {
     const {
-      BASE_DIR
+      BASE_DIR,
+      OG_IMAGE_PATH,
+      ORIGIN
     } = process.env
     return {
-      BASE_DIR
+      BASE_DIR,
+      OG_IMAGE_PATH,
+      ORIGIN
     }
   }
 }
