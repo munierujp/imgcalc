@@ -1,6 +1,10 @@
+import fs from 'fs'
 import colors from 'vuetify/es5/util/colors'
 import i18n from './nuxt-i18n.config'
 import lang from './lang/ja'
+
+const config = loadConfig('./config.json')
+const { BASE_DIR } = config
 
 export default {
   mode: 'spa',
@@ -69,6 +73,26 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+    }
+  },
+  /*
+  ** router config
+  */
+  router: {
+    base: BASE_DIR
+  }
+}
+
+function loadConfig(filepath) {
+  try {
+    const data = fs.readFileSync(filepath, 'utf-8')
+    return JSON.parse(data)
+  } catch (ignored) {
+    const {
+      BASE_DIR
+    } = process.env
+    return {
+      BASE_DIR
     }
   }
 }
