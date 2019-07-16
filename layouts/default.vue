@@ -8,8 +8,19 @@
         <nuxt />
       </v-container>
     </v-content>
+    <app-footer />
   </v-app>
 </template>
+
+<script>
+import AppFooter from '~/components/AppFooter'
+
+export default {
+  components: {
+    AppFooter
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
