@@ -8,7 +8,6 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: `%s - ${lang.APP_NAME}`,
     title: lang.APP_NAME,
     meta: [
       { charset: 'utf-8' },
