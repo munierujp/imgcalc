@@ -2,7 +2,7 @@ import fs from 'fs'
 import { URL } from 'url'
 import colors from 'vuetify/es5/util/colors'
 import i18n from './nuxt-i18n.config'
-import lang from './lang/ja'
+import lang from './lang/en'
 
 const DEFAULT_LOCALE = i18n.defaultLocale
 const APP_NAME = lang.APP_NAME
