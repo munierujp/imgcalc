@@ -23,7 +23,7 @@ export default {
     const APP_DESCRIPTION = this.$t('APP_DESCRIPTION')
     const { meta } = this.$nuxtI18nSeo()
     return {
-      title: `${APP_NAME}: ${APP_DESCRIPTION}`,
+      title: APP_NAME,
       meta: [
         { hid: 'description', name: 'description', content: APP_DESCRIPTION },
         { hid: 'og:title', property: 'og:title', content: APP_NAME },
