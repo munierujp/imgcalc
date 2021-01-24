@@ -45,6 +45,6 @@
     "stylelint-scss": "3.18.0",
     "stylelint-webpack-plugin": "0.10.5",
     "stylus": "0.54.8",
-    "stylus-loader": "3.0.2"
+    "stylus-loader": "4.3.3"
   }
 }
