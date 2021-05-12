@@ -41,7 +41,7 @@
     "nuxt-i18n": "5.12.7",
     "sass-loader": "7.3.1",
     "stylelint": "10.1.0",
-    "stylelint-config-standard": "18.3.0",
+    "stylelint-config-standard": "22.0.0",
     "stylelint-scss": "3.19.0",
     "stylelint-webpack-plugin": "0.10.5",
     "stylus": "0.54.8",
