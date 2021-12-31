@@ -20,7 +20,7 @@
   "dependencies": {
     "@nuxtjs/vuetify": "0.5.7",
     "@nuxtjs/pwa": "2.6.0",
-    "nuxt": "2.15.8"
+    "nuxt": "2.15.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "0.0.1",
