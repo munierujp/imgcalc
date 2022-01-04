@@ -1,6 +1,6 @@
 {
   "APP_NAME": "imgcalc",
-  "APP_DESCRIPTION": "アスペクト比から画像サイズを計算するツール",
+  "APP_DESCRIPTION": "アスペクト比から画像サイズを計算するウェブアプリ",
   "FOOTER_CREATOR": "Created by {creator}",
   "FOOTER_CREATOR_URL": "https://twitter.com/munieru_jp",
   "FOOTER_CREATOR_LABEL": "@munieru_jp",
