@@ -1,6 +1,6 @@
 {
   "APP_NAME": "imgcalc",
-  "APP_DESCRIPTION": "Tool for calculating image size from aspect ratio",
+  "APP_DESCRIPTION": "Web app for calculating image size from aspect ratio",
   "FOOTER_CREATOR": "Created by {creator}",
   "FOOTER_CREATOR_URL": "https://twitter.com/munieru_jp",
   "FOOTER_CREATOR_LABEL": "@munieru_jp",
