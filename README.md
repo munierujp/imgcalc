@@ -1,12 +1,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/73ae2996-3e5c-4717-8c92-5db9d6e15550/deploy-status)](https://app.netlify.com/sites/imgcalc/deploys)
 
 # imgcalc
-Tool for calculating image size from aspect ratio
+
+Web app for calculating image size from aspect ratio
 
 <img src=".doc/iphone.png" width="300">
 
 ## Development
 ### Install packages
+
 ```sh
 $ npm i
 ```
@@ -18,6 +20,7 @@ $ yarn install
 ```
 
 ### Create config file
+
 ```sh
 $ cp config.sample.json config.json
 ```

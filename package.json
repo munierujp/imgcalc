@@ -1,7 +1,7 @@
 {
   "name": "imgcalc",
   "version": "1.0.0",
-  "description": "Tool for calculating image size from aspect ratio",
+  "description": "Web app for calculating image size from aspect ratio",
   "author": "Munieru",
   "private": true,
   "scripts": {
