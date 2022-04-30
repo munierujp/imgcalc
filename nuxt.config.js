@@ -1,5 +1,7 @@
 import fs from 'fs'
 import { URL } from 'url'
+import sass from 'sass'
+import fiber from 'fibers'
 import colors from 'vuetify/es5/util/colors'
 import i18n from './nuxt-i18n.config'
 import lang from './lang/en'
@@ -93,6 +95,14 @@ export default {
     ** You can extend webpack config here
     */
     extend(config, ctx) {
+    },
+    loaders: {
+      scss: {
+        implementation: sass,
+        sassOptions: {
+          fiber
+        }
+      }
     }
   },
   /*
