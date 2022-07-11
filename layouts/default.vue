@@ -1,14 +1,14 @@
 <template>
   <v-app id="app">
     <app-header />
-    <v-content>
+    <v-main>
       <v-container
         grid-list-xl
         text-xs-center
       >
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <app-footer />
   </v-app>
 </template>
