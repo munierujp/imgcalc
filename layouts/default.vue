@@ -1,14 +1,14 @@
 <template>
   <v-app id="app">
     <app-header />
-    <v-content>
+    <v-main>
       <v-container
         grid-list-xl
         text-xs-center
       >
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <app-footer />
   </v-app>
 </template>
@@ -18,7 +18,7 @@ import AppHeader from '~/components/AppHeader'
 import AppFooter from '~/components/AppFooter'
 
 export default {
-  head() {
+  head () {
     const APP_NAME = this.$t('APP_NAME')
     const APP_DESCRIPTION = this.$t('APP_DESCRIPTION')
     const { meta } = this.$nuxtI18nSeo()
