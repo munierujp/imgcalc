@@ -94,7 +94,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
     },
     loaders: {
       scss: {
@@ -125,7 +125,7 @@ export default {
   }
 }
 
-function loadConfig(filepath) {
+function loadConfig (filepath) {
   try {
     const data = fs.readFileSync(filepath, 'utf-8')
     return JSON.parse(data)

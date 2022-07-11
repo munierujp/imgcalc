@@ -1,9 +1,9 @@
 <template>
   <v-text-field
     v-model.number="computedValue"
-    type="number"
     :label="label"
     :min="min"
+    type="number"
   />
 </template>
 
@@ -25,10 +25,10 @@ export default {
   },
   computed: {
     computedValue: {
-      get() {
+      get () {
         return this.value
       },
-      set(value) {
+      set (value) {
         const num = isNumber(value) ? value : this.min
         this.$emit('input', num)
       }
@@ -36,7 +36,7 @@ export default {
   }
 }
 
-function isNumber(value) {
+function isNumber (value) {
   return typeof value === 'number'
 }
 </script>

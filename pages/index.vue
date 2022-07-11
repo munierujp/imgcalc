@@ -6,11 +6,11 @@
           <v-select
             v-model="preset"
             :items="presets"
+            :label="$t('PRESET')"
+            @change="presetHasChanged"
             item-text="label"
             item-value="value"
-            :label="$t('PRESET')"
             return-object
-            @change="presetHasChanged"
           />
         </v-flex>
       </v-layout>
@@ -75,23 +75,23 @@ export default {
     }
   },
   methods: {
-    presetHasChanged(preset) {
+    presetHasChanged (preset) {
       const { width, widthRatio, height, heightRatio } = preset
       this.width = width
       this.widthRatio = widthRatio
       this.height = height
       this.heightRatio = heightRatio
     },
-    widthHasChanged(width) {
+    widthHasChanged (width) {
       this.height = width * (this.heightRatio / this.widthRatio)
     },
-    widthRatioHasChanged(widthRatio) {
+    widthRatioHasChanged (widthRatio) {
       this.width = this.height * (widthRatio / this.heightRatio)
     },
-    heightHasChanged(height) {
+    heightHasChanged (height) {
       this.width = height * (this.widthRatio / this.heightRatio)
     },
-    heightRatioHasChanged(heightRatio) {
+    heightRatioHasChanged (heightRatio) {
       this.height = this.width * (heightRatio / this.widthRatio)
     }
   }
