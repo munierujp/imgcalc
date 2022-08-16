@@ -4,7 +4,7 @@
 
 Web app for calculating image size from aspect ratio
 
-<img src=".doc/iphone.png" width="300">
+<img src="./meta/iphone.png" width="300">
 
 ## Development
 ### Install packages
