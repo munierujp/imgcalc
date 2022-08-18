@@ -69,8 +69,6 @@ export default {
   modules: [
     '@nuxtjs/vuetify',
     '@nuxtjs/pwa',
-    // FIXME: ちゃんと動くようになるまで無効化
-    // '@nuxtjs/eslint-module',
     ['nuxt-i18n', i18n]
   ],
   /*
