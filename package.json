@@ -27,7 +27,7 @@
     "@nuxtjs/eslint-module": "3.1.0",
     "babel-eslint": "10.1.0",
     "eslint": "5.16.0",
-    "eslint-config-standard": "16.0.3",
+    "eslint-config-standard": "17.0.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "22.21.0",
     "eslint-plugin-node": "11.1.0",
