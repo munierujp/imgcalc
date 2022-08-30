@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.18.13",
-    "fibers": "5.0.2",
+    "fibers": "5.0.3",
     "nodemon": "2.0.19",
     "nuxt-i18n": "6.28.1",
     "sass": "1.54.6",
