@@ -11,18 +11,17 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/vuetify": "1.12.3",
     "@nuxtjs/pwa": "2.6.0",
+    "@nuxtjs/vuetify": "1.12.3",
     "nuxt": "2.15.8"
   },
   "devDependencies": {
-    "@babel/core": "7.19.6",
-    "fibers": "5.0.3",
+    "@babel/core": "7.20.2",
     "nodemon": "2.0.20",
     "nuxt-i18n": "6.28.1",
-    "sass": "1.55.0",
+    "sass": "1.56.1",
     "sass-loader": "10.3.1",
     "stylus": "0.59.0",
-    "stylus-loader": "7.1.0"
+    "stylus-loader": "4.3.3"
   }
 }
