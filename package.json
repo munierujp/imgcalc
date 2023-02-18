@@ -13,7 +13,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "3.3.5",
     "@nuxtjs/vuetify": "1.12.3",
-    "nuxt": "2.16.1"
+    "nuxt": "3.2.2"
   },
   "devDependencies": {
     "@babel/core": "7.20.12",
