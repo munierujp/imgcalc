@@ -12,21 +12,6 @@
   </v-app>
 </template>
 
-<script lang="ts">
-export default {
-  head () {
-    return {
-      title: 'imgcalc',
-      meta: [
-        { hid: 'description', name: 'description', content: 'Web app for calculating image size from aspect ratio' },
-        { hid: 'og:title', property: 'og:title', content: 'imgcalc' },
-        { hid: 'og:description', property: 'og:description', content: 'Web app for calculating image size from aspect ratio' }
-      ]
-    }
-  }
-}
-</script>
-
 <style lang="scss">
 #app {
   background-color: #fafafa;
