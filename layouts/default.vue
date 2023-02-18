@@ -16,9 +16,6 @@
 <script>
 // TODO: TS化
 
-import AppHeader from '../components/AppHeader'
-import AppFooter from '../components/AppFooter'
-
 export default {
   head () {
     return {
@@ -29,10 +26,6 @@ export default {
         { hid: 'og:description', property: 'og:description', content: 'Web app for calculating image size from aspect ratio' }
       ]
     }
-  },
-  components: {
-    AppHeader,
-    AppFooter
   }
 }
 </script>

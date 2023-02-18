@@ -57,8 +57,6 @@
 <script>
 // TODO: TS化
 
-import AppInput from '../components/AppInput.vue'
-
 const presets = [
   {
     label: '4:3 (400x300)',
@@ -147,9 +145,6 @@ const presets = [
 ]
 
 export default {
-  components: {
-    AppInput
-  },
   data: () => {
     const preset = presets[0]
     const { width, widthRatio, height, heightRatio } = preset
