@@ -13,9 +13,7 @@
   </v-app>
 </template>
 
-<script>
-// TODO: TS化
-
+<script lang="ts">
 export default {
   head () {
     return {
