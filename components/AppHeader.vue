@@ -8,15 +8,3 @@
     <v-toolbar-title>imgcalc</v-toolbar-title>
   </v-app-bar>
 </template>
-
-<script>
-// TODO: TS化
-
-import AppLanguageSwitcher from '~/components/AppLanguageSwitcher'
-
-export default {
-  components: {
-    AppLanguageSwitcher
-  }
-}
-</script>
