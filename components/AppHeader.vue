@@ -5,7 +5,7 @@
     dark
     app
   >
-    <v-toolbar-title>{{ $t('APP_NAME') }}</v-toolbar-title>
+    <v-toolbar-title>imgcalc</v-toolbar-title>
   </v-app-bar>
 </template>
 
