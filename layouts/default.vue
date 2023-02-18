@@ -2,12 +2,7 @@
   <v-app id="app">
     <AppHeader />
     <v-main>
-      <v-container
-        grid-list-xl
-        text-xs-center
-      >
-        <slot />
-      </v-container>
+      <slot />
     </v-main>
   </v-app>
 </template>
