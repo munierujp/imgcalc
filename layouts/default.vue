@@ -16,6 +16,5 @@
 #app {
   background-color: #fafafa;
   color: #212121;
-  font-family: Roboto, "Noto Sans JP", sans-serif;
 }
 </style>
