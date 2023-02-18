@@ -11,14 +11,14 @@ export default defineNuxtConfig({
       ]
     }
   },
-  css: [
-    'vuetify/lib/styles/main.sass'
-  ],
   build: {
     transpile: [
       'vuetify'
     ]
   },
+  css: [
+    'vuetify/lib/styles/main.sass'
+  ],
   vite: {
     define: {
       'process.env.DEBUG': false
