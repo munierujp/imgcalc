@@ -1,4 +1,7 @@
 {
+  "name": "imgcalc",
+  "version": "2.0.0",
+  "description": "Web app for calculating image size from aspect ratio",
   "private": true,
   "scripts": {
     "build": "nuxt build",
