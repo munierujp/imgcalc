@@ -7,9 +7,7 @@
   />
 </template>
 
-<script>
-// TODO: TS化
-
+<script lang="ts">
 export default {
   props: {
     value: {
@@ -30,15 +28,11 @@ export default {
       get () {
         return this.value
       },
-      set (value) {
-        const num = isNumber(value) ? value : this.min
-        this.$emit('input', num)
+      set (value: unknown) {
+        const number = typeof value === 'number' ? value : this.min
+        this.$emit('input', number)
       }
     }
   }
-}
-
-function isNumber (value) {
-  return typeof value === 'number'
 }
 </script>
