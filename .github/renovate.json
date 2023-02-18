@@ -1,5 +1,0 @@
-{
-  "extends": [
-    "github>munierujp/renovate-config"
-  ]
-}
