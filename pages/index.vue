@@ -8,7 +8,7 @@
             :items="presets"
             label="preset"
             @change="presetHasChanged"
-            item-text="label"
+            item-title="label"
             item-value="value"
             return-object
           />
@@ -21,14 +21,14 @@
           <AppInput
             v-model="widthRatio"
             label="width ratio"
-            @input="widthRatioHasChanged"
+            @update:modelValue="widthRatioHasChanged"
           />
         </v-flex>
         <v-flex xs4 sm2 md2 lg1 xl1>
           <AppInput
             v-model="heightRatio"
             label="height ratio"
-            @input="heightRatioHasChanged"
+            @update:modelValue="heightRatioHasChanged"
           />
         </v-flex>
       </v-layout>
@@ -39,14 +39,14 @@
           <AppInput
             v-model="width"
             label="width"
-            @input="widthHasChanged"
+            @update:modelValue="widthHasChanged"
           />
         </v-flex>
         <v-flex xs4 sm2 md2 lg1 xl1>
           <AppInput
             v-model="height"
             label="height"
-            @input="heightHasChanged"
+            @update:modelValue="heightHasChanged"
           />
         </v-flex>
       </v-layout>
@@ -54,10 +54,16 @@
   </v-layout>
 </template>
 
-<script>
-// TODO: TS化
+<script lang="ts">
+interface Preset {
+  label: string,
+  width: number,
+  widthRatio: number,
+  height: number,
+  heightRatio: number
+}
 
-const presets = [
+const presets: Preset[]= [
   {
     label: '4:3 (400x300)',
     width: 400,
@@ -158,23 +164,23 @@ export default {
     }
   },
   methods: {
-    presetHasChanged (preset) {
+    presetHasChanged (preset: Preset) {
       const { width, widthRatio, height, heightRatio } = preset
       this.width = width
       this.widthRatio = widthRatio
       this.height = height
       this.heightRatio = heightRatio
     },
-    widthHasChanged (width) {
+    widthHasChanged (width: number) {
       this.height = width * (this.heightRatio / this.widthRatio)
     },
-    widthRatioHasChanged (widthRatio) {
+    widthRatioHasChanged (widthRatio: number) {
       this.width = this.height * (widthRatio / this.heightRatio)
     },
-    heightHasChanged (height) {
+    heightHasChanged (height: number) {
       this.width = height * (this.widthRatio / this.heightRatio)
     },
-    heightRatioHasChanged (heightRatio) {
+    heightRatioHasChanged (heightRatio: number) {
       this.height = this.width * (heightRatio / this.widthRatio)
     }
   }
