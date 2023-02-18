@@ -1,6 +1,6 @@
 <template>
   <v-text-field
-    v-model.number="computedValue"
+    v-model.number="value"
     :label="label"
     :min="min"
     type="number"
@@ -10,7 +10,7 @@
 <script lang="ts">
 export default {
   props: {
-    value: {
+    modelValue: {
       type: Number,
       required: true
     },
@@ -24,13 +24,13 @@ export default {
     }
   },
   computed: {
-    computedValue: {
+    value: {
       get () {
-        return this.value
+        return this.modelValue
       },
       set (value: unknown) {
         const number = typeof value === 'number' ? value : this.min
-        this.$emit('input', number)
+        this.$emit('update:modelValue', number)
       }
     }
   }
