@@ -4,16 +4,21 @@ export default defineNuxtConfig({
     head: {
       title: 'imgcalc',
       meta: [
-        { name: 'description', content: 'Web app for calculating image size from aspect ratio' }
+        {
+          name: 'description',
+          content: 'Web app for calculating image size from aspect ratio'
+        }
       ]
     }
-  },
-  build: {
-    transpile: ['vuetify']
   },
   css: [
     'vuetify/lib/styles/main.sass'
   ],
+  build: {
+    transpile: [
+      'vuetify'
+    ]
+  },
   vite: {
     define: {
       'process.env.DEBUG': false
