@@ -1,9 +1,9 @@
 <template>
   <v-text-field
-    v-model.number="value"
+    type="number"
     :label="label"
     :min="min"
-    type="number"
+    v-model.number="value"
   />
 </template>
 
