@@ -88,5 +88,6 @@ const presets: Preset[]= [
 ]
 
 export default defineAppConfig({
+  appName: 'imgcalc',
   presets
 })
