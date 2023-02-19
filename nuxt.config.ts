@@ -35,6 +35,14 @@ export default defineNuxtConfig({
         {
           property: 'og:image:height',
           content: '1024'
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          name: 'twitter:site',
+          content: '@munieru_jp'
         }
       ],
       link: [
