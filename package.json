@@ -7,8 +7,9 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "lint": "eslint .",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview"
   },
   "devDependencies": {
     "@mdi/font": "^7.1.96",
