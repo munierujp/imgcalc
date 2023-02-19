@@ -6,7 +6,6 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description',
-          // eslint-disable-next-line sonarjs/no-duplicate-string
           content: 'Web app for calculating image size from aspect ratio'
         },
         {
@@ -80,22 +79,12 @@ export default defineNuxtConfig({
   css: [
     'vuetify/lib/styles/main.sass'
   ],
-  modules: [
-    '@vite-pwa/nuxt'
-  ],
   typescript: {
     strict: true
   },
   vite: {
     define: {
       'process.env.DEBUG': false
-    }
-  },
-  pwa: {
-    manifest: {
-      name: 'imgcalc',
-      short_name: 'imgcalc',
-      description: 'Web app for calculating image size from aspect ratio'
     }
   }
 })
