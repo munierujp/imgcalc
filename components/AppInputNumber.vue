@@ -26,7 +26,7 @@ const value = computed({
 
 <template>
   <v-text-field
-    v-model="value"
+    v-model.number="value"
     type="number"
     min="1"
     :label="label"
