@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+const config = useAppConfig()
+</script>
+
 <template>
   <v-app-bar class="app-header bg-grey-darken-4 text-grey-lighten-5">
     <v-app-bar-title :text="config.appName" />
@@ -17,7 +21,3 @@
     </v-btn>
   </v-app-bar>
 </template>
-
-<script lang="ts" setup>
-const config = useAppConfig()
-</script>
