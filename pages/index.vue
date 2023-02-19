@@ -2,13 +2,10 @@
   <v-container>
     <v-row>
       <v-col>
-        <v-select
-          v-model="preset"
-          :items="presets"
+        <AppPresetSelector
           label="preset"
-          item-title="label"
-          item-value="value"
-          return-object
+          :items="presets"
+          v-model="preset"
           @update:model-value="handlePresetUpdated"
         />
       </v-col>
@@ -16,15 +13,15 @@
     <v-row>
       <v-col>
         <AppInputNumber
-          v-model="widthRatio"
           label="width ratio"
+          v-model="widthRatio"
           @update:modelValue="handleWidthRatioUpdated"
         />
       </v-col>
       <v-col>
         <AppInputNumber
-          v-model="heightRatio"
           label="height ratio"
+          v-model="heightRatio"
           @update:modelValue="handleHeightRatioUpdated"
         />
       </v-col>
@@ -32,15 +29,15 @@
     <v-row>
       <v-col>
         <AppInputNumber
-          v-model="width"
           label="width"
+          v-model="width"
           @update:modelValue="handleWidthUpdated"
         />
       </v-col>
       <v-col>
         <AppInputNumber
-          v-model="height"
           label="height"
+          v-model="height"
           @update:modelValue="handleHeightUpdated"
         />
       </v-col>
