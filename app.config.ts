@@ -2,6 +2,7 @@ import type { Preset } from './types/Preset'
 
 const presets: Preset[]= [
   {
+    key: '400x300',
     name: '4:3 (400x300)',
     width: 400,
     widthRatio: 4,
@@ -9,6 +10,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '800x600',
     name: '4:3 (800x600)',
     width: 800,
     widthRatio: 4,
@@ -16,6 +18,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '1200x900',
     name: '4:3 (1200x900)',
     width: 1200,
     widthRatio: 4,
@@ -23,6 +26,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '1600x900',
     name: '16:9 (1600x900)',
     width: 1600,
     widthRatio: 16,
@@ -30,6 +34,7 @@ const presets: Preset[]= [
     heightRatio: 9
   },
   {
+    key: '1600x1200',
     name: '4:3 (1600x1200)',
     width: 1600,
     widthRatio: 4,
@@ -37,6 +42,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '2000x1500',
     name: '4:3 (2000x1500)',
     width: 2000,
     widthRatio: 4,
@@ -44,6 +50,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '2400x1800',
     name: '4:3 (2400x1800)',
     width: 2400,
     widthRatio: 4,
@@ -51,6 +58,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '2800x2100',
     name: '4:3 (2800x2100)',
     width: 2800,
     widthRatio: 4,
@@ -58,6 +66,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '3200x1800',
     name: '16:9 (3200x1800)',
     width: 3200,
     widthRatio: 16,
@@ -65,6 +74,7 @@ const presets: Preset[]= [
     heightRatio: 9
   },
   {
+    key: '3200x2400',
     name: '4:3 (3200x2400)',
     width: 3200,
     widthRatio: 4,
@@ -72,6 +82,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '3600x2700',
     name: '4:3 (3600x2700)',
     width: 3600,
     widthRatio: 4,
@@ -79,6 +90,7 @@ const presets: Preset[]= [
     heightRatio: 3
   },
   {
+    key: '4000x3000',
     name: '4:3 (4000x3000)',
     width: 4000,
     widthRatio: 4,

@@ -35,7 +35,7 @@ const value = computed({
     :label="label"
     :items="items"
     item-title="name"
-    item-value="value"
+    item-value="key"
     return-object
     v-model="value"
   />
