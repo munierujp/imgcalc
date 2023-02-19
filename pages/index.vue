@@ -1,3 +1,38 @@
+<script lang="ts" setup>
+import type { Preset } from '../types/Preset'
+
+const config = useAppConfig()
+const presets = ref(config.presets)
+const preset = ref(presets.value[0])
+const width = ref(preset.value.width)
+const widthRatio = ref(preset.value.widthRatio)
+const height = ref(preset.value.height)
+const heightRatio = ref(preset.value.heightRatio)
+
+const handleWidthUpdated = (width: number) => {
+  height.value = width * (heightRatio.value / widthRatio.value)
+}
+
+const handleWidthRatioUpdated = (widthRatio: number) => {
+  width.value = height.value * (widthRatio / heightRatio.value)
+}
+
+const handleHeightUpdated = (height: number) => {
+  width.value = height * (widthRatio.value / heightRatio.value)
+}
+
+const handleHeightRatioUpdated = (heightRatio: number) => {
+  height.value = width.value * (heightRatio / widthRatio.value)
+}
+
+const handlePresetUpdated = (preset: Preset) => {
+  width.value = preset.width
+  widthRatio.value = preset.widthRatio
+  height.value = preset.height
+  heightRatio.value = preset.heightRatio
+}
+</script>
+
 <template>
   <v-container>
     <v-row justify="center">
@@ -74,46 +109,3 @@
     </v-row>
   </v-container>
 </template>
-
-<script lang="ts">
-// TODO: setupにする
-
-import type { Preset } from '../types/Preset'
-
-export default {
-  data: () => {
-    const config = useAppConfig()
-    const presets = config.presets
-    const preset = presets[0]
-    const { width, widthRatio, height, heightRatio } = preset
-    return {
-      width,
-      widthRatio,
-      height,
-      heightRatio,
-      preset,
-      presets
-    }
-  },
-  methods: {
-    handleHeightRatioUpdated (heightRatio: number) {
-      this.height = this.width * (heightRatio / this.widthRatio)
-    },
-    handleHeightUpdated (height: number) {
-      this.width = height * (this.widthRatio / this.heightRatio)
-    },
-    handlePresetUpdated (preset: Preset) {
-      this.width = preset.width
-      this.widthRatio = preset.widthRatio
-      this.height = preset.height
-      this.heightRatio = preset.heightRatio
-    },
-    handleWidthRatioUpdated (widthRatio: number) {
-      this.width = this.height * (widthRatio / this.heightRatio)
-    },
-    handleWidthUpdated (width: number) {
-      this.height = width * (this.heightRatio / this.widthRatio)
-    }
-  }
-}
-</script>
