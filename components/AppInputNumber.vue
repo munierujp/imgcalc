@@ -1,9 +1,9 @@
 <template>
   <v-text-field
     type="number"
+    min="1"
     :label="label"
-    :min="min"
-    v-model.number="value"
+    v-model="value"
   />
 </template>
 
@@ -14,24 +14,18 @@ export default {
       type: String,
       required: true
     },
-    min: {
-      type: Number,
-      default: 1
-    },
     modelValue: {
       type: Number,
       required: true
     }
-    
   },
   computed: {
     value: {
       get () {
         return this.modelValue
       },
-      set (value: unknown) {
-        const number = typeof value === 'number' ? value : this.min
-        this.$emit('update:modelValue', number)
+      set (value: number) {
+        this.$emit('update:modelValue', value)
       }
     }
   }
