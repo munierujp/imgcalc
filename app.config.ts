@@ -1,6 +1,6 @@
 import type { Preset } from './types/Preset'
 
-const presets: Preset[]= [
+const presets: Preset[] = [
   {
     key: '400x300',
     name: '4:3 (400x300)',

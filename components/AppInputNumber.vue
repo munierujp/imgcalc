@@ -10,9 +10,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits<{
-  (e: 'update:modelValue', value: number): void
-}>();
+const emit = defineEmits<{(e: 'update:modelValue', value: number): void}>()
 
 const value = computed({
   get () {

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Preset } from '../types/Preset';
+import type { Preset } from '../types/Preset'
 
 const props = defineProps({
   items: {
@@ -16,9 +16,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits<{
-  (e: 'update:modelValue', value: Preset): void
-}>();
+const emit = defineEmits<{(e: 'update:modelValue', value: Preset): void}>()
 
 const value = computed({
   get () {
