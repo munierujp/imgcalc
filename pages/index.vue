@@ -1,7 +1,13 @@
 <template>
   <v-container>
-    <v-row>
-      <v-col>
+    <v-row justify="center">
+      <v-col
+        cols="12"
+        sm="6"
+        md="4"
+        lg="4"
+        xl="2"
+      >
         <AppPresetSelector
           label="preset"
           :items="presets"
@@ -10,15 +16,27 @@
         />
       </v-col>
     </v-row>
-    <v-row>
-      <v-col>
+    <v-row justify="center">
+      <v-col
+        cols="6"
+        sm="3"
+        md="2"
+        lg="2"
+        xl="1"
+      >
         <AppInputNumber
           label="width ratio"
           v-model="widthRatio"
           @update:modelValue="handleWidthRatioUpdated"
         />
       </v-col>
-      <v-col>
+      <v-col
+        cols="6"
+        sm="3"
+        md="2"
+        lg="2"
+        xl="1"
+      >
         <AppInputNumber
           label="height ratio"
           v-model="heightRatio"
@@ -26,15 +44,27 @@
         />
       </v-col>
     </v-row>
-    <v-row>
-      <v-col>
+    <v-row justify="center">
+      <v-col
+        cols="6"
+        sm="3"
+        md="2"
+        lg="2"
+        xl="1"
+      >
         <AppInputNumber
           label="width"
           v-model="width"
           @update:modelValue="handleWidthUpdated"
         />
       </v-col>
-      <v-col>
+      <v-col
+        cols="6"
+        sm="3"
+        md="2"
+        lg="2"
+        xl="1"
+      >
         <AppInputNumber
           label="height"
           v-model="height"
