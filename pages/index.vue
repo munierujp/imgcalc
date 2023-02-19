@@ -10,19 +10,19 @@ const height = ref(preset.value.height)
 const heightRatio = ref(preset.value.heightRatio)
 
 const handleWidthUpdated = (width: number) => {
-  height.value = width * (heightRatio.value / widthRatio.value)
+  height.value = Math.ceil(width * (heightRatio.value / widthRatio.value))
 }
 
 const handleWidthRatioUpdated = (widthRatio: number) => {
-  width.value = height.value * (widthRatio / heightRatio.value)
+  width.value = Math.ceil(height.value * (widthRatio / heightRatio.value))
 }
 
 const handleHeightUpdated = (height: number) => {
-  width.value = height * (widthRatio.value / heightRatio.value)
+  width.value = Math.ceil(height * (widthRatio.value / heightRatio.value))
 }
 
 const handleHeightRatioUpdated = (heightRatio: number) => {
-  height.value = width.value * (heightRatio / widthRatio.value)
+  height.value = Math.ceil(width.value * (heightRatio / widthRatio.value))
 }
 
 const handlePresetUpdated = (preset: Preset) => {
