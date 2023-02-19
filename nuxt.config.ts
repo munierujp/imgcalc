@@ -83,5 +83,8 @@ export default defineNuxtConfig({
     define: {
       'process.env.DEBUG': false
     }
+  },
+  typescript: {
+    strict: true
   }
 })
