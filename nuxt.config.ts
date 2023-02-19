@@ -7,6 +7,34 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content: 'Web app for calculating image size from aspect ratio'
+        },
+        {
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          property: 'og:title',
+          content: 'imgcalc'
+        },
+        {
+          property: 'og:description',
+          content: 'Web app for calculating image size from aspect ratio'
+        },
+        {
+          property: 'og:url',
+          content: 'https://imgcalc.munieru.app/'
+        },
+        {
+          property: 'og:image',
+          content: 'https://imgcalc.munieru.app/icon.png'
+        },
+        {
+          property: 'og:image:width',
+          content: '1024'
+        },
+        {
+          property: 'og:image:height',
+          content: '1024'
         }
       ],
       link: [
