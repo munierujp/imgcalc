@@ -15,14 +15,14 @@
     </v-row>
     <v-row>
       <v-col>
-        <AppInput
+        <AppInputNumber
           v-model="widthRatio"
           label="width ratio"
           @update:modelValue="handleWidthRatioUpdated"
         />
       </v-col>
       <v-col>
-        <AppInput
+        <AppInputNumber
           v-model="heightRatio"
           label="height ratio"
           @update:modelValue="handleHeightRatioUpdated"
@@ -31,14 +31,14 @@
     </v-row>
     <v-row>
       <v-col>
-        <AppInput
+        <AppInputNumber
           v-model="width"
           label="width"
           @update:modelValue="handleWidthUpdated"
         />
       </v-col>
       <v-col>
-        <AppInput
+        <AppInputNumber
           v-model="height"
           label="height"
           @update:modelValue="handleHeightUpdated"
