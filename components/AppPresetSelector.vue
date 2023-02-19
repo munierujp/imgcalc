@@ -32,12 +32,12 @@ const value = computed({
 
 <template>
   <v-select
+    v-model="value"
     :label="label"
     :items="items"
     item-title="name"
     item-value="key"
     return-object
     variant="underlined"
-    v-model="value"
   />
 </template>

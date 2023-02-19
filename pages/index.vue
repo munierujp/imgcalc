@@ -44,9 +44,9 @@ const handlePresetUpdated = (preset: Preset) => {
         xl="2"
       >
         <AppPresetSelector
+          v-model="preset"
           label="preset"
           :items="presets"
-          v-model="preset"
           @update:model-value="handlePresetUpdated"
         />
       </v-col>
@@ -60,9 +60,9 @@ const handlePresetUpdated = (preset: Preset) => {
         xl="1"
       >
         <AppInputNumber
-          label="width ratio"
           v-model="widthRatio"
-          @update:modelValue="handleWidthRatioUpdated"
+          label="width ratio"
+          @update:model-value="handleWidthRatioUpdated"
         />
       </v-col>
       <v-col
@@ -73,9 +73,9 @@ const handlePresetUpdated = (preset: Preset) => {
         xl="1"
       >
         <AppInputNumber
-          label="height ratio"
           v-model="heightRatio"
-          @update:modelValue="handleHeightRatioUpdated"
+          label="height ratio"
+          @update:model-value="handleHeightRatioUpdated"
         />
       </v-col>
     </v-row>
@@ -88,9 +88,9 @@ const handlePresetUpdated = (preset: Preset) => {
         xl="1"
       >
         <AppInputNumber
-          label="width"
           v-model="width"
-          @update:modelValue="handleWidthUpdated"
+          label="width"
+          @update:model-value="handleWidthUpdated"
         />
       </v-col>
       <v-col
@@ -101,9 +101,9 @@ const handlePresetUpdated = (preset: Preset) => {
         xl="1"
       >
         <AppInputNumber
-          label="height"
           v-model="height"
-          @update:modelValue="handleHeightUpdated"
+          label="height"
+          @update:model-value="handleHeightUpdated"
         />
       </v-col>
     </v-row>
