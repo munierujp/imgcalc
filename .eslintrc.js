@@ -1,4 +1,10 @@
 module.exports = {
   root: true,
-  extends: ["@nuxt/eslint-config"],
-};
+  extends: [
+    '@munierujp/eslint-config-typescript',
+    '@nuxt/eslint-config'
+  ],
+  parserOptions: {
+    project: './tsconfig.json'
+  }
+}
