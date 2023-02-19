@@ -29,6 +29,7 @@ const value = computed({
     type="number"
     min="1"
     :label="label"
+    variant="underlined"
     v-model="value"
   />
 </template>

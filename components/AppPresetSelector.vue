@@ -37,6 +37,7 @@ const value = computed({
     item-title="name"
     item-value="key"
     return-object
+    variant="underlined"
     v-model="value"
   />
 </template>
