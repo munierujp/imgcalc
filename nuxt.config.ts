@@ -79,12 +79,12 @@ export default defineNuxtConfig({
   css: [
     'vuetify/lib/styles/main.sass'
   ],
+  typescript: {
+    strict: true
+  },
   vite: {
     define: {
       'process.env.DEBUG': false
     }
-  },
-  typescript: {
-    strict: true
   }
 })
