@@ -34,7 +34,7 @@ const value = computed({
   <v-select
     :label="label"
     :items="items"
-    item-title="label"
+    item-title="name"
     item-value="value"
     return-object
     v-model="value"

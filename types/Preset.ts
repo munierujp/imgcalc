@@ -1,5 +1,5 @@
 export interface Preset {
-  label: string,
+  name: string,
   width: number,
   widthRatio: number,
   height: number,
