@@ -10,10 +10,6 @@
 <script lang="ts">
 export default {
   props: {
-    modelValue: {
-      type: Number,
-      required: true
-    },
     label: {
       type: String,
       required: true
@@ -21,7 +17,12 @@ export default {
     min: {
       type: Number,
       default: 1
+    },
+    modelValue: {
+      type: Number,
+      required: true
     }
+    
   },
   computed: {
     value: {
