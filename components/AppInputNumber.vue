@@ -1,3 +1,27 @@
+<script lang="ts" setup>
+const props = defineProps({
+  label: {
+    type: String,
+    required: true
+  },
+  modelValue: {
+    type: Number,
+    required: true
+  }
+})
+const emit = defineEmits<{
+  (e: 'update:modelValue', value: number): void
+}>();
+const value = computed({
+  get () {
+    return props.modelValue
+  },
+  set (value) {
+    emit('update:modelValue', value)
+  }
+})
+</script>
+
 <template>
   <v-text-field
     type="number"
@@ -6,28 +30,3 @@
     v-model="value"
   />
 </template>
-
-<script lang="ts">
-export default {
-  props: {
-    label: {
-      type: String,
-      required: true
-    },
-    modelValue: {
-      type: Number,
-      required: true
-    }
-  },
-  computed: {
-    value: {
-      get () {
-        return this.modelValue
-      },
-      set (value: number) {
-        this.$emit('update:modelValue', value)
-      }
-    }
-  }
-}
-</script>
