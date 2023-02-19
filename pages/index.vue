@@ -49,6 +49,8 @@
 </template>
 
 <script lang="ts">
+// TODO: setupにする
+
 import type { Preset } from '../types/Preset'
 
 export default {
