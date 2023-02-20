@@ -1,14 +1,8 @@
 <script lang="ts" setup>
-const props = defineProps({
-  label: {
-    type: String,
-    required: true
-  },
-  modelValue: {
-    type: Number,
-    required: true
-  }
-})
+const props = defineProps<{
+  label: string
+  modelValue: number
+}>()
 
 const emit = defineEmits<{(e: 'update:modelValue', value: number): void}>()
 
