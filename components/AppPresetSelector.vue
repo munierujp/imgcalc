@@ -1,20 +1,11 @@
 <script lang="ts" setup>
 import type { Preset } from '../types/Preset'
 
-const props = defineProps({
-  items: {
-    type: Array as PropType<Preset[]>,
-    required: true
-  },
-  label: {
-    type: String,
-    required: true
-  },
-  modelValue: {
-    type: Object as PropType<Preset>,
-    required: true
-  }
-})
+const props = defineProps<{
+  items: Preset[]
+  label: string
+  modelValue: Preset
+}>()
 
 const emit = defineEmits<{(e: 'update:modelValue', value: Preset): void}>()
 
