@@ -98,6 +98,9 @@ export default defineNuxtConfig({
       name: APP_NAME,
       short_name: APP_NAME,
       description: APP_DESCRIPTION
+    },
+    devOptions: {
+      enabled: true
     }
   }
 })
