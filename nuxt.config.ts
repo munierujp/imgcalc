@@ -97,7 +97,10 @@ export default defineNuxtConfig({
     manifest: {
       name: APP_NAME,
       short_name: APP_NAME,
-      description: APP_DESCRIPTION
+      description: APP_DESCRIPTION,
+      theme_color: '#212121',
+      background_color: '#121212',
+      display: 'standalone'
     },
     devOptions: {
       enabled: true
