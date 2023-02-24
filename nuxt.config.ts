@@ -114,6 +114,12 @@ export default defineNuxtConfig({
       ],
       display: 'standalone'
     },
+    workbox: {
+      navigateFallback: '/'
+    },
+    client: {
+      installPrompt: true
+    },
     devOptions: {
       enabled: true,
       type: 'module'
