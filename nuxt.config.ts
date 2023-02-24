@@ -114,9 +114,6 @@ export default defineNuxtConfig({
       ],
       display: 'standalone'
     },
-    client: {
-      installPrompt: true
-    },
     devOptions: {
       enabled: true,
       type: 'module'
