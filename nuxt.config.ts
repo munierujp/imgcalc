@@ -1,12 +1,15 @@
+const APP_NAME = 'imgcalc'
+const APP_DESCRIPTION = 'Web app for calculating image size from aspect ratio'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'imgcalc',
+      title: APP_NAME,
       meta: [
         {
           name: 'description',
-          content: 'Web app for calculating image size from aspect ratio'
+          content: APP_DESCRIPTION
         },
         {
           property: 'og:type',
@@ -14,11 +17,11 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:title',
-          content: 'imgcalc'
+          content: APP_NAME
         },
         {
           property: 'og:description',
-          content: 'Web app for calculating image size from aspect ratio'
+          content: APP_DESCRIPTION
         },
         {
           property: 'og:url',
@@ -79,12 +82,41 @@ export default defineNuxtConfig({
   css: [
     'vuetify/lib/styles/main.sass'
   ],
+  modules: [
+    '@vite-pwa/nuxt'
+  ],
   typescript: {
     strict: true
   },
   vite: {
     define: {
       'process.env.DEBUG': false
+    }
+  },
+  pwa: {
+    manifest: {
+      name: APP_NAME,
+      short_name: APP_NAME,
+      description: APP_DESCRIPTION,
+      theme_color: '#212121',
+      background_color: '#121212',
+      icons: [
+        {
+          src: 'pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png'
+        },
+        {
+          src: 'pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png'
+        }
+      ],
+      display: 'standalone'
+    },
+    devOptions: {
+      enabled: true,
+      type: 'module'
     }
   }
 })
