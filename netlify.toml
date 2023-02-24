@@ -1,4 +1,10 @@
 # https://vite-pwa-org.netlify.app/deployment/netlify.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# https://vite-pwa-org.netlify.app/deployment/netlify.html
 [[headers]]
   for = "/manifest.webmanifest"
   [headers.values]
