@@ -3,3 +3,5 @@
 # imgcalc
 
 Web app for calculating image size from aspect ratio
+
+<img src="./meta/iphone.png" width="300"><img src="./meta/ipad.png" width="600">
