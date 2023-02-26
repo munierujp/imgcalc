@@ -57,18 +57,12 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          href: '/favicon-256x256.png',
-          sizes: '256x256'
-        },
-        {
-          rel: 'icon',
-          type: 'image/png',
           href: '/android-chrome-192x192.png',
           sizes: '192x192'
         },
         {
           rel: 'apple-touch-icon',
-          href: '/apple-touch-icon-180x180.png',
+          href: '/apple-touch-icon.png',
           sizes: '180x180'
         }
       ]
