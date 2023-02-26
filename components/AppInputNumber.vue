@@ -6,19 +6,19 @@ const props = defineProps<{
 
 const emit = defineEmits<{(e: 'update:modelValue', value: number): void}>()
 
-const value = computed({
+const value = computed<string>({
   get () {
-    return props.modelValue
+    return String(props.modelValue)
   },
   set (value) {
-    emit('update:modelValue', value)
+    emit('update:modelValue', Number(value))
   }
 })
 </script>
 
 <template>
   <v-text-field
-    v-model.number="value"
+    v-model="value"
     type="number"
     inputmode="numeric"
     min="1"
