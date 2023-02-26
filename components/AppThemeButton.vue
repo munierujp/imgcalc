@@ -4,7 +4,7 @@ import { useTheme } from 'vuetify'
 const theme = useTheme()
 const icon = computed(() => theme.global.current.value.dark ? 'mdi-weather-night' : 'mdi-weather-sunny')
 
-const handleClick = () => {
+const toggleTheme = () => {
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
 }
 </script>
@@ -13,6 +13,6 @@ const handleClick = () => {
   <v-btn
     title="toggle theme"
     :icon="icon"
-    @click="handleClick"
+    @click="toggleTheme"
   />
 </template>
