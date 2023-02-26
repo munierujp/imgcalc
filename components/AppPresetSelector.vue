@@ -2,7 +2,7 @@
 import type { Preset } from '../types/Preset'
 
 const props = defineProps<{
-  items: Preset[]
+  presets: Preset[]
   label: string
   modelValue: Preset
 }>()
@@ -23,7 +23,7 @@ const value = computed({
   <v-select
     v-model="value"
     :label="label"
-    :items="items"
+    :items="presets"
     item-title="name"
     item-value="key"
     return-object
