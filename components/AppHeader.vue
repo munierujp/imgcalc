@@ -2,12 +2,7 @@
   <v-app-bar>
     <v-app-bar-title text="imgcalc" />
     <AppThemeButton />
-    <v-btn
-      title="Twitter"
-      icon="mdi-twitter"
-      href="https://twitter.com/munieru_jp"
-      target="_blank"
-    />
+    <AppTwitterButton />
     <v-btn
       title="GitHub"
       icon="mdi-github"
