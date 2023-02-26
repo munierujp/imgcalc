@@ -108,10 +108,6 @@ export default defineNuxtConfig({
         }
       ],
       display: 'standalone'
-    },
-    devOptions: {
-      enabled: true,
-      type: 'module'
     }
   }
 })
