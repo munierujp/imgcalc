@@ -20,6 +20,7 @@ const value = computed({
   <v-text-field
     v-model.number="value"
     type="number"
+    inputmode="numeric"
     min="1"
     :label="label"
     variant="underlined"
