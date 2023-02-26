@@ -21,7 +21,7 @@ const value = computed<string>({
     v-model="value"
     type="number"
     inputmode="numeric"
-    min="1"
+    min="0"
     :label="label"
     variant="underlined"
   />
