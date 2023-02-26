@@ -46,7 +46,7 @@ const handlePresetUpdated = (preset: Preset) => {
         <AppPresetSelector
           v-model="preset"
           label="preset"
-          :items="presets"
+          :presets="presets"
           @update:model-value="handlePresetUpdated"
         />
       </v-col>
