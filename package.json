@@ -7,8 +7,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "eslint .",
     "lint:css": "stylelint \"**/*.css\" \"**/*.scss\" \"**/*.vue\"",
+    "lint:js": "eslint .",
     "lint:fix": "eslint --fix .",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview"
