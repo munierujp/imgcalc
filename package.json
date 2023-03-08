@@ -23,6 +23,7 @@
     "nuxt": "3.2.3",
     "sass": "1.58.3",
     "stylelint": "15.2.0",
+    "stylelint-config-standard": "30.0.1",
     "vuetify": "3.1.8"
   }
 }
