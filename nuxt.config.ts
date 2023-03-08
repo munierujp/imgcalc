@@ -77,6 +77,7 @@ export default defineNuxtConfig({
     'vuetify/lib/styles/main.sass'
   ],
   modules: [
+    '@nuxtjs/eslint-module',
     '@vite-pwa/nuxt'
   ],
   typescript: {
