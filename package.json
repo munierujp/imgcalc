@@ -10,7 +10,6 @@
     "lint": "npm-run-all -p lint:*",
     "lint:css": "stylelint \"**/*.css\" \"**/*.scss\" \"**/*.vue\"",
     "lint:js": "eslint .",
-    "lint:fix": "eslint --fix .",
     "postinstall": "nuxt prepare",
     "preview": "nuxt preview"
   },
