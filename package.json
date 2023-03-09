@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "lint": "npm-run-all -p lint:*",
+    "lint": "npm-run-all --continue-on-error lint:*",
     "lint:css": "stylelint \"**/*.css\" \"**/*.scss\" \"**/*.vue\"",
     "lint:js": "eslint .",
     "postinstall": "nuxt prepare",
