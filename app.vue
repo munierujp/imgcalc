@@ -2,8 +2,6 @@
   <VitePwaManifest />
   <v-app id="app">
     <AppHeader />
-    <v-main>
-      <AppCalculator />
-    </v-main>
+    <NuxtPage />
   </v-app>
 </template>
