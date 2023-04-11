@@ -6,5 +6,8 @@
 Web app for calculating image size from aspect ratio
 
 <div align="center">
-  <img src="./meta/iphone.png" width="300" align="center">
+  <img
+    src="./meta/iphone.png"
+    width="300"
+  >
 </div>
