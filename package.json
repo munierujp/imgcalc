@@ -24,7 +24,7 @@
     "eslint": "8.39.0",
     "markuplint": "3.9.1",
     "npm-run-all2": "6.0.5",
-    "nuxt": "3.2.3",
+    "nuxt": "3.6.5",
     "sass": "1.62.1",
     "vuetify": "3.2.2"
   }
