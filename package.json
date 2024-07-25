@@ -14,18 +14,18 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@markuplint/vue-parser": "4.6.1",
-    "@markuplint/vue-spec": "4.5.1",
+    "@markuplint/vue-parser": "4.6.5",
+    "@markuplint/vue-spec": "4.5.5",
     "@mdi/font": "7.4.47",
-    "@nuxt/eslint-config": "0.3.12",
+    "@nuxt/eslint-config": "0.3.13",
     "@nuxtjs/eslint-module": "4.1.0",
-    "@typescript-eslint/eslint-plugin": "7.8.0",
+    "@typescript-eslint/eslint-plugin": "7.17.0",
     "@vite-pwa/nuxt": "0.7.0",
     "eslint": "8.57.0",
-    "markuplint": "4.8.1",
-    "npm-run-all2": "6.1.2",
+    "markuplint": "4.9.2",
+    "npm-run-all2": "6.2.2",
     "nuxt": "3.11.2",
-    "sass": "1.76.0",
+    "sass": "1.77.1",
     "vuetify": "3.5.18"
   }
 }
