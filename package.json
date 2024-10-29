@@ -21,7 +21,7 @@
     "@nuxtjs/eslint-module": "4.1.0",
     "@typescript-eslint/eslint-plugin": "8.12.1",
     "@vite-pwa/nuxt": "0.7.0",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "markuplint": "4.9.3",
     "npm-run-all2": "6.2.6",
     "nuxt": "3.11.2",
