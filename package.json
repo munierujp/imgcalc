@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@markuplint/vue-parser": "4.6.11",
-    "@markuplint/vue-spec": "4.5.6",
+    "@markuplint/vue-spec": "4.5.11",
     "@mdi/font": "7.4.47",
     "@nuxt/eslint-config": "0.5.7",
     "@nuxtjs/eslint-module": "4.1.0",
@@ -23,7 +23,7 @@
     "@vite-pwa/nuxt": "0.7.0",
     "eslint": "8.57.1",
     "markuplint": "4.9.3",
-    "npm-run-all2": "6.2.2",
+    "npm-run-all2": "6.2.6",
     "nuxt": "3.11.2",
     "sass": "1.78.0",
     "vuetify": "3.5.18"
