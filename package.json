@@ -22,7 +22,7 @@
     "@typescript-eslint/eslint-plugin": "8.12.1",
     "@vite-pwa/nuxt": "0.7.0",
     "eslint": "8.57.1",
-    "markuplint": "4.9.3",
+    "markuplint": "4.9.4",
     "npm-run-all2": "6.2.6",
     "nuxt": "3.11.2",
     "sass": "1.78.0",
