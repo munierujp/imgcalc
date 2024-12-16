@@ -23,7 +23,7 @@
     "@vite-pwa/nuxt": "0.7.0",
     "eslint": "8.57.1",
     "markuplint": "4.11.4",
-    "npm-run-all2": "7.0.1",
+    "npm-run-all2": "7.0.2",
     "nuxt": "3.11.2",
     "sass": "1.81.1",
     "vuetify": "3.5.18"
